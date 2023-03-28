@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 final Uri _url = Uri.parse(
-    'https://play.google.com/store/apps/details?id=com.byjus.thelearningapp');
+    'https://drive.google.com/file/d/1g5TSLSlxUdEh6WH3S-0b66xZHEMa_s6W/view?usp=sharing');
 
 class app_launch extends StatelessWidget {
   const app_launch({super.key});
@@ -30,7 +30,7 @@ Future<void> _launchUrl() async {
   } else {
     await launchUrl(
       _url,
-      mode: LaunchMode.externalApplication,
+      mode: LaunchMode.externalNonBrowserApplication,
     );
   }
 }
